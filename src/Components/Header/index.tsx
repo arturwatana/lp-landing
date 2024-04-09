@@ -16,7 +16,7 @@ export default function Header(){
     return (
         <>
             <Flex direction={"row"} justifyContent={"center"}  >
-                <Flex w="45%" alignItems={"center"} justifyContent={"space-between"}>
+                <Flex maxW="1920px" minW="1000px" alignItems={"center"} justifyContent={"space-between"}>
                     <a href="/">
                         <Image src={Leafpay} w="150px" mt="8px" style={{cursor:"pointer"}}/>
                     </a>

@@ -19,8 +19,8 @@ export default function MainSection(){
         <motion.section style={{background:"#ff6418",paddingTop:"5px", paddingBottom: "20px"}}>
              <Header/>
             <Flex  w="100%" justifyContent={"space-around"}  marginTop={"20px"} >
-                <Flex alignItems={"center"} w="45%" justifyContent={"space-between"}>
-                    <Box  w="70%" color="#fff" fontSize={35} lineHeight={"10px"}>
+                <Flex alignItems={"center"} minW="1000px" maxW="1920px" justifyContent={"space-between"}>
+                    <Box  w="70%" color="#fff" fontSize={40} lineHeight={"10px"}>
                         <motion.p style={{letterSpacing:"3px"}}>Seu departamento pessoal</motion.p>
                         <motion.p  style={{letterSpacing:"8px",fontWeight:"bold"}}>descomplicado,</motion.p>
                         <motion.p style={{letterSpacing:"3px"}}>como tem que ser.</motion.p>

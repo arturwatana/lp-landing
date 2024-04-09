@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import MainSection from './Components/MainSection'
 import SecondSection from './Components/SecondSection'
-import { Flex } from '@chakra-ui/react'
+import ThirdSection from './Components/ThirdSection'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,6 +9,7 @@ function App() {
     <>
       <MainSection/>
       <SecondSection/>
+      <ThirdSection/>
     </>
   )
 }
