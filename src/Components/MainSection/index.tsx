@@ -16,10 +16,10 @@ export default function MainSection(){
     }
     return (
         <>
-        <motion.section style={{background:"#ff6418",paddingTop:"5px", paddingBottom: "20px"}}>
+        <motion.section style={{background:"#ff6418",paddingTop:"5px", paddingBottom: "20px", display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
              <Header/>
-            <Flex  w="100%" justifyContent={"space-around"}  marginTop={"20px"} >
-                <Flex alignItems={"center"} minW="1000px" maxW="1920px" justifyContent={"space-between"}>
+            <Flex maxW="1920px" minW="1200px"  justifyContent={"space-around"}  marginTop={"20px"} >
+                <Flex alignItems={"center"} justifyContent={"space-between"}>
                     <Box  w="70%" color="#fff" fontSize={40} lineHeight={"10px"}>
                         <motion.p style={{letterSpacing:"3px"}}>Seu departamento pessoal</motion.p>
                         <motion.p  style={{letterSpacing:"8px",fontWeight:"bold"}}>descomplicado,</motion.p>
