@@ -57,7 +57,6 @@ export default function ThirdSection(){
                             <motion.image >
                                 <Image src={BackBlock} h="300px" left="-5%" top="79%" position={"absolute"} zIndex={-1}/>
                             </motion.image>
-
                     </Flex>
                 </Flex>
             </Flex>

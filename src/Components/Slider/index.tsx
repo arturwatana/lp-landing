@@ -4,45 +4,38 @@ import {motion} from "framer-motion"
 import { useEffect, useState } from "react";
 
 type SwipeProps = {
-    left: boolean,
-    right: boolean
+    cards: number,
+    cardInView: number
 }
 
 export default function Slider(){
 
     const [swipe, setSwipe] = useState<SwipeProps>({
-        left: false,
-        right: false
+        cards: 8,
+        cardInView: 0
     })
 
     const variants = {
-        swipeLeft: {
-            x: -300
-        },
-        swipeRight: {
-            x: 300
-        }
+        swipe:(i: number) => ({
+            x: 0 + (-300 * (i - 2))
+        }),
     }
     
     useEffect(() => {
-        if(swipe.left){
-            setTimeout(() => {
-                setSwipe((prev)=> ({
-                    ...prev, 
-                    left: !prev.left
-                }))
-            }, 1000)
-        }
+        console.log(swipe)
     }, [swipe])
 
     return (
         <>
             <Flex w="100%" border="1px solid red" justifyContent={"center"}>
-                    <Box color="#222" onClick={() => setSwipe((prev) => ({...prev, left: true}))}>
+                    <Box color="#222" onClick={() => setSwipe((prev) => ({...prev, cardInView: prev.cardInView === 0 ? 8 : prev.cardInView -1}))}>
                         <p>Left</p>
                     </Box>
                 <Flex maxW="600px" overflow={"hidden"} border="1px solid red">
-                    <motion.div animate={swipe.left ? "swipeLeft" : ""} style={{display:"flex"}} variants={variants} >
+                    <motion.div animate={"swipe"} style={{display:"flex"}} custom={swipe.cardInView} variants={variants} >
+                        <Image src={Ace}/>
+                        <Image src={Ace}/>
+                        <Image src={Ace}/>
                         <Image src={Ace}/>
                         <Image src={Ace}/>
                         <Image src={Ace}/>
