@@ -6,6 +6,7 @@ import Dashboard from "../../assets/Tela-Software.svg"
 import Items from "../../assets/Elementos-Frente-Tela.svg"
 import {motion} from "framer-motion"
 import BackBlock from "../../assets/Elementos-Fundo-Tela.svg"
+import Slider from "../Slider";
 
 export default function ThirdSection(){
     const { scrollY } = useScroll()
@@ -60,6 +61,7 @@ export default function ThirdSection(){
                     </Flex>
                 </Flex>
             </Flex>
+            <Slider/>
         </>
     )
 }
