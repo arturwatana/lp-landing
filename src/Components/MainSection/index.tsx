@@ -1,7 +1,6 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Image } from "@chakra-ui/react";
 import WomanModel from "../../assets/Modelo-Banner-Principal.png"
-import {easeIn, motion, reverseEasing} from "framer-motion"
-import Header from "../Header";
+import {motion} from "framer-motion"
 import Svg from "../../assets/Smile-Sobre-Banner-Principal.svg"
 
 

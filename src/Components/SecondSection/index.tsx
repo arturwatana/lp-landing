@@ -1,7 +1,6 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
 import Card from "../Card";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
 
 
 

@@ -1,4 +1,4 @@
-import { Box, Flex, Image, chakra } from "@chakra-ui/react";
+import { Flex, Image, chakra } from "@chakra-ui/react";
 import Leafpay from "../../assets/Logo-Leafpay-Branco.png"
 import {motion} from "framer-motion"
 

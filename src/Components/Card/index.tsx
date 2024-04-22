@@ -1,7 +1,5 @@
-import { Flex, Text } from "@chakra-ui/react";
+import { Text } from "@chakra-ui/react";
 import {motion } from "framer-motion"
-import { useState } from "react";
-import { render } from "react-dom";
 type CardProps = {
     tittle: string
     customValue: number

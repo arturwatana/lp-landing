@@ -1,12 +1,11 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Flex, Image, Text } from "@chakra-ui/react";
 import SoftwareCard from "../SoftwareCard";
 import { useMotionValueEvent, useScroll } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import Dashboard from "../../assets/Tela-Software.svg"
 import Items from "../../assets/Elementos-Frente-Tela.svg"
 import {motion} from "framer-motion"
 import BackBlock from "../../assets/Elementos-Fundo-Tela.svg"
-import Slider from "../Slider";
 
 export default function ThirdSection(){
     const { scrollY } = useScroll()

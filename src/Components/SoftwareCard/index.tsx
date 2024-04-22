@@ -1,7 +1,6 @@
-import { Box, Flex, Image, Text, transition } from "@chakra-ui/react";
+import { Text } from "@chakra-ui/react";
 import {motion } from "framer-motion"
 import { useState } from "react";
-import { GiPlainArrow } from "react-icons/gi";
 
 type SoftwareCardProps = {
     index: number
