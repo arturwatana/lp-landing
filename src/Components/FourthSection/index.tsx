@@ -26,7 +26,7 @@ export default function FourthSection(){
     }
     return (
         <>
-            <Flex  minH="540px" justifyContent={"center"} py="60px">
+            <Flex  minH="540px" justifyContent={"center"}  py="60px">
                 <Flex  background="#ff6418" w="70%" h="470px" px="30px" py="10px"  rounded={"45px"}>
                     <Flex minW="60%" position={"relative"} justifyContent={"center"}>
                         <Image  src={SobreNos}/>
@@ -46,7 +46,7 @@ export default function FourthSection(){
                     </Flex>
                 </Flex>    
             </Flex>        
-            <Flex minH="430px" justifyContent={"center"}>
+            <Flex minH="330px" justifyContent={"center"} >
                 <Flex  background={"#F5F5F5"} h={"180px"} rounded="50px" w="74%">
                     <Flex fontSize={33} w="30%" flexDir="column"color="gray"justifyContent={"center"}  pl="120px" textAlign={"left"}  letterSpacing={"3px"}>
                         <Text fontWeight={"bold"} marginBlockEnd={0} marginBlockStart={0}>Nossos</Text>
