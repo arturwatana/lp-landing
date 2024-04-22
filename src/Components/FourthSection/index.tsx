@@ -39,7 +39,7 @@ export default function FourthSection(){
                             <Text fontWeight={"bold"} marginBlockStart={0} marginBlockEnd={0}>Sobre</Text>
                             <Text marginBlockEnd={0} marginBlockStart={0}>nós</Text>
                         </Flex>
-                        <Text fontSize={18} w="75%">A LeafPay existe para fazer a gestão completa do seu departamento pessoal de forma descomplicada. O nosso atendimento consultivo, ágil e humano é o que te deixa com um sorriso no rosto e livre para se dedicar ao seu negócio!</Text>
+                        <Text fontSize={18} w="75%" letterSpacing={"1px"}>A LeafPay existe para fazer a gestão completa do seu departamento pessoal de forma descomplicada. O nosso atendimento consultivo, ágil e humano é o que te deixa com um sorriso no rosto e livre para se dedicar ao seu negócio!</Text>
                         <motion.p whileHover={"hover"} variants={constraints} style={{textAlign:"center",cursor: "pointer", border:"1px solid white", borderRadius: "50px", padding:"10px 25px" , width: "120px"} }>
                             Saiba mais
                         </motion.p>
