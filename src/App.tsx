@@ -4,6 +4,7 @@ import SecondSection from './Components/SecondSection'
 import ThirdSection from './Components/ThirdSection'
 import Footer from './Components/Footer'
 import Header from './Components/Header'
+import FourthSection from './Components/FourthSection'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,6 +14,7 @@ function App() {
       <MainSection/>
       <SecondSection/>
       <ThirdSection/>
+      <FourthSection/>
       <Footer/>
     </>
   )

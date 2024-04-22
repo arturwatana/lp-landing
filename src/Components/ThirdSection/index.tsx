@@ -34,16 +34,16 @@ export default function ThirdSection(){
     return (
         <>
             <Flex flexDir={"column"} justifyContent={"center"} alignItems={"center"}>
-                <Flex w="70%"  alignItems={"center"} pb="130px">
+                <Flex w="80%"  alignItems={"center"} pb="130px">
                     <Flex alignItems={"center"} w="60%" minHeight="580px"  flexDir={"column"} >
-                        <Flex w="50%" flexDirection={"column"} pt="140px" gap="30px"  >
+                        <Flex w="80%" flexDirection={"column"} pt="140px" gap="30px"  >
                             <Flex  color="#ff6418"  gap="15px"  lineHeight={0} flexDir={"column"}>
-                                <Text marginBlockStart={0}  marginBlockEnd={0} fontWeight={"bold"} letterSpacing={"2px"} fontSize={40}>Software de</Text>
-                                <Text fontSize={32}  marginBlockEnd={0} letterSpacing={"3px"}>folha de pagamento</Text>
+                                <Text marginBlockStart={0}  marginBlockEnd={2} fontWeight={"bold"} letterSpacing={"2px"} fontSize={40}>Software de</Text>
+                                <Text fontSize={32}  marginBlockStart={25}  marginBlockEnd={0} letterSpacing={"3px"}>folha de pagamento</Text>
                             </Flex>
-                            <Text  fontSize={18} color="gray" w="40%">Precisao, seguranca e confiabilidade para sua folha de pagamento</Text>
+                            <Text  fontSize={18} marginBlockStart={0}  marginBlockEnd={0} color="gray" w="70%">Precisao, seguranca e confiabilidade para sua folha de pagamento</Text>
                         </Flex>
-                        <Flex w='50%' mt="30px" flexDir={"column"}   gap="10px">
+                        <Flex w='80%' mt="30px" flexDir={"column"}   gap="10px">
                             {words.map((word, index) => <SoftwareCard isInView={cardInView} index={index} text={word}/>)}
                         </Flex>
                     </Flex>
@@ -60,7 +60,6 @@ export default function ThirdSection(){
                     </Flex>
                 </Flex>
             </Flex>
-            <Slider/>
         </>
     )
 }

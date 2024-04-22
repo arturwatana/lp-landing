@@ -1,5 +1,12 @@
 import { Box, Flex, Image } from "@chakra-ui/react";
 import Ace from "../../assets/ace2.png"
+import Caudalie from "../../assets/Logo-Caudalie.png"
+import ConectCar from "../../assets/Logo-ConectCar (1).png"
+import Flash from "../../assets/Logo-Flash.png"
+import Minu from "../../assets/Logo-Minu.png"
+import Pipo from "../../assets/Logo-Pipo-Saude.png"
+import Provi from "../../assets/Logo-Provi.png"
+import Provu from "../../assets/provu.png"
 import {motion} from "framer-motion"
 import { useEffect, useState } from "react";
 
@@ -34,13 +41,13 @@ export default function Slider(){
                 <Flex maxW="600px" overflow={"hidden"} border="1px solid red">
                     <motion.div animate={"swipe"} style={{display:"flex"}} custom={swipe.cardInView} variants={variants} >
                         <Image src={Ace}/>
-                        <Image src={Ace}/>
-                        <Image src={Ace}/>
-                        <Image src={Ace}/>
-                        <Image src={Ace}/>
-                        <Image src={Ace}/>
-                        <Image src={Ace}/>
-                        <Image src={Ace}/>
+                        <Image src={Caudalie}/>
+                        <Image src={ConectCar}/>
+                        <Image src={Provi}/>
+                        <Image src={Provu}/>
+                        <Image src={Minu}/>
+                        <Image src={Flash}/>
+                        <Image src={Pipo}/>
                     </motion.div>
                 </Flex>
                 <Box color="#222" onClick={() => setSwipe((prev) => ({...prev, cardInView: prev.cardInView === 8 ? 2 : prev.cardInView +1}))}>
