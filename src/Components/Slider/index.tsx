@@ -12,7 +12,7 @@ export default function Slider(){
 
     const [swipe, setSwipe] = useState<SwipeProps>({
         cards: 8,
-        cardInView: 0
+        cardInView: 2
     })
 
     const variants = {
@@ -28,7 +28,7 @@ export default function Slider(){
     return (
         <>
             <Flex w="100%" border="1px solid red" justifyContent={"center"}>
-                    <Box color="#222" onClick={() => setSwipe((prev) => ({...prev, cardInView: prev.cardInView === 0 ? 8 : prev.cardInView -1}))}>
+                    <Box color="#222" onClick={() => setSwipe((prev) => ({...prev, cardInView: prev.cardInView === 2 ? 8 : prev.cardInView -1}))}>
                         <p>Left</p>
                     </Box>
                 <Flex maxW="600px" overflow={"hidden"} border="1px solid red">
@@ -43,6 +43,9 @@ export default function Slider(){
                         <Image src={Ace}/>
                     </motion.div>
                 </Flex>
+                <Box color="#222" onClick={() => setSwipe((prev) => ({...prev, cardInView: prev.cardInView === 8 ? 2 : prev.cardInView +1}))}>
+                        <p>Right</p>
+                    </Box>
              </Flex>
         </>
     )
