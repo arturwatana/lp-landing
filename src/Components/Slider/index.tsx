@@ -7,7 +7,7 @@ import Minu from "../../assets/Logo-Minu.png"
 import Pipo from "../../assets/Logo-Pipo-Saude.png"
 import Provi from "../../assets/Logo-Provi.png"
 import Provu from "../../assets/provu.png"
-import {easeIn, motion} from "framer-motion"
+import { motion} from "framer-motion"
 import { useEffect, useState } from "react";
 import { IoIosArrowBack } from "react-icons/io";
 type SwipeProps = {

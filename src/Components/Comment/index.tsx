@@ -7,7 +7,7 @@ type CommentProps = {
     photo?: string
 }
 
-export default function Comment({photo, text}: CommentProps){
+export default function Comment({text}: CommentProps){
     return (
         <>
             <Flex flexDir={"column"} justifyContent={"space-around"} p="20px 20px 20px 40px" fontSize={14} boxShadow="5px 15px 30px 1px #cccccc" background={"#fff"} rounded={"10px"} minH="400px" maxW="350px" >
