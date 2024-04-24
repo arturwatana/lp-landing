@@ -15,7 +15,7 @@ export default function FifthSection(){
                     </Flex>
                     <Slider/>   
                 </Flex>
-                    <Flex minH="500px" gap="35px" top="35%" left="30%" alignItems={"center"} justifyContent={"center"} position="absolute">
+                    <Flex minH="500px" gap="35px" top="35%" left="22%" alignItems={"center"} justifyContent={"center"} position="absolute">
                         <Comment text="“A Leafpay superou nossas expectativas trazendo tranquilidade já durante a fase de implementação. Procura sempre demonstrar os pontos de melhoria, assim como as possíveis soluções cabíveis, corrigindo o processo de ponta a ponta. Possuem equipe muito dedicada, dando todo o apoio necessário tanto para a administração quanto para os colaboradores."/>
                         <Comment text="“A Leafpay superou nossas expectativas trazendo tranquilidade já durante a fase de implementação. Procura sempre demonstrar os pontos de melhoria, assim como as possíveis soluções cabíveis, corrigindo o processo de ponta a ponta. Possuem equipe muito dedicada, dando todo o apoio necessário tanto para a administração quanto para os colaboradores."/>
                     </Flex>
